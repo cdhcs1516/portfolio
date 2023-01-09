@@ -4,12 +4,13 @@ const Header = ({ name, navbars }) => {
   return (
     <div className="header-section">
       <div className="header-section__logo">
-        <a href="#app" >
-          <h2 className="header-section__name">{name}</h2>
-        </a>
+        <h2 className="header-section__name">{name}</h2>
       </div>
       
       <div className="header-section__navbars">
+        <div className="navbar">
+          <a href='#app'>HOME</a>
+        </div>
         {navbars.map((nav, index) => {
           return (
             <div key={index} className="navbar">

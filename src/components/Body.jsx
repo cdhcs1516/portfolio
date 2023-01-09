@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedinIn, } from 'react-icons/fa';
 
-import Avatar from '../assets/avatar.png';
+import HeadShot from '../data/assets/headshot.png';
 
 const Body = ({ name, jd, linkedAccounts }) => {
   const { github, linkedIn } = linkedAccounts;
@@ -9,7 +9,7 @@ const Body = ({ name, jd, linkedAccounts }) => {
     <div id="body" className="body">
       <div className="body-container">
         <div className="body-profile">
-          <img className="body-profile__image" alt="avatar" src={Avatar} />
+          <img className="body-profile__image" alt="avatar" src={HeadShot} />
           <div className="body-profile__content">
             <div className="body-profile__name">
               {name}

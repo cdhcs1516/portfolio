@@ -33,7 +33,7 @@ const ICONS = Object.freeze({
 const Skills = ({ skills }) => {
   return (
     <div id='skills' className='skills'>
-      <h2 className='title'>Skills</h2>
+      <h2 className='title'>SKILLS</h2>
       <div className='skill-holder'>
         {skills.map((skill, index) => {
           return (

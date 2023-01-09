@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 import linkedAccounts from './data/accounts.json';
+import about from './data/about.json';
 import projects from './data/projects.json';
 import skills from './data/skills.json';
 import socials from './data/socials.json';
@@ -26,7 +27,7 @@ const App = () => {
           linkedAccounts={linkedAccounts}
         />
         <About
-          selfIntroduction="sjfisjfijasijfiasjfijsaijfijasifjiasjifjsaijfasj"
+          selfIntroduction={about.selfIntroduction}
         />
         <Projects 
           projects={projects}

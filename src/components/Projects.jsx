@@ -23,12 +23,14 @@ const Projects = ({ projects }) => {
   };
 
   const renderProject = (project, index) => {
-    const { name, description, link, coverImagePath } = project;
+    const { name, description, stacks, projectLink, hostLink, coverImageName } = project;
 
     return (
       <div key={`project-${index}`} className="project">
         <div className="content">
-          <img src={coverImagePath} alt="Project" />
+          {coverImageName && (
+            <img src={require(`../data/assets/${coverImageName}`)} alt="Project" />
+          )}
           <h2 className="name">{name}</h2>
           {
               description.length > 130 
@@ -39,11 +41,33 @@ const Projects = ({ projects }) => {
             <a
               className="project-button"
               target="_blank"
-              href={link}
+              href={projectLink}
               rel="noreferrer"
             >
               GitHub
             </a>
+            {hostLink && (
+              <a
+                className="project-button"
+                target="_blank"
+                href={hostLink}
+                rel="noreferrer"
+              >
+                Link
+              </a>
+            )}
+          </div>
+          <div className="project-stacks">
+            {stacks.map((stack, index) => {
+              return (
+                <div
+                  key={`project-${name}-stack-${stack}`}
+                  className="stack"
+                >
+                  {stack.toUpperCase()}
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

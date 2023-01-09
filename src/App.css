@@ -72,7 +72,7 @@ a, a:active, a:hover {
 /* Body Section */ 
 .body {
   position: relative;
-  background-color: #343434;
+  background-color: #212517;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -146,6 +146,7 @@ a, a:active, a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: #759242;
 }
 
 .about__heading {  
@@ -189,8 +190,8 @@ a, a:active, a:hover {
 
 /* Projects section */
 .projects {
-  background-color: #e9d5a1;
-  height: 65vh;
+  background-color: #DED3A6;
+  height: 75vh;
   margin-top: -2rem;
 }
 .projects__heading {
@@ -204,7 +205,7 @@ a, a:active, a:hover {
 }
 .projects__container .project {
   position: relative;
-  height: 38vh;
+  height: 50vh;
   border: 0.3rem solid black;
   border-radius: 20px;
   margin: 0 1rem 0 0;
@@ -223,7 +224,7 @@ a, a:active, a:hover {
   border-radius: 15px;
   transition: all 0.5s;
   cursor: auto;
-  overflow: hidden;
+  overflow: visible;
 }
 .content:hover {
   transform: translate(0, -10px);
@@ -236,7 +237,7 @@ a, a:active, a:hover {
 .projects__container .project .content img{
   display: block;
   margin: 0 auto;
-  width: 31%;
+  height: 200px;
 }
 .name {
   color: #2b2d42;
@@ -267,9 +268,27 @@ a, a:active, a:hover {
   font-size: 1.2rem;
   font-weight: 800;
   padding: 5px 25px;
+  margin: 4px;
   border: 1px solid rgba(30, 39, 46, 0.7);
   border-radius: 8%;
   color: rgba(30, 39, 46, 0.7);
+}
+.project-stacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 16px;
+}
+.project-stacks .stack {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px;
+  margin: 4px;
+  border: 1px solid rgba(30, 39, 46, 0.7);
+  border-radius: 8%;
+  background-color: rgba(30, 39, 46, 0.9);
+  color: #edf2f4;
 }
 .project-button:hover,
 .project-button:active,
@@ -281,7 +300,7 @@ a, a:active, a:hover {
 @media (min-width: 500px) and (max-width: 650px) { 
   .projects__container .project {
     position: relative;
-    height: 38vh;
+    height: 50vh;
     border: 0.3rem solid black;
     border-radius: 20px;
     margin: 0 1rem 0 0;
@@ -295,12 +314,11 @@ a, a:active, a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -1.2rem;
     height: 88%;
     border-radius: 15px;
     transition: all 0.5s;
     cursor: auto;
-    overflow: hidden;
+    overflow: visible;
   }
   .projects__container .project .content img{
     display: block;
@@ -347,7 +365,7 @@ a, a:active, a:hover {
   }
   .projects__container .project {
     position: relative;
-    height: 38vh;
+    height: 50vh;
     border: 0.3rem solid black;
     border-radius: 20px;
     margin: 0 1rem 0 0;
@@ -366,7 +384,7 @@ a, a:active, a:hover {
     border-radius: 15px;
     transition: all 0.5s;
     cursor: auto;
-    overflow: hidden;
+    overflow: visible;
   }
   .content:hover {
     transform: translate(0, -10px);
@@ -492,7 +510,7 @@ a, a:active, a:hover {
 
 /* Skills section */
 .skills {
-  background-color: white;
+  background-color: #F2F2EF;
   height: 50vh;
   display: flex;
   flex-direction: column;
